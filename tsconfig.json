@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "baseUrl": "src",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "paths" : {
+      "app/*": ["./app/*"],
+      "environment": ["./environments/environment.ts"]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "./src/typings.d.ts"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  }
+}
